@@ -10,6 +10,7 @@ const routes: Routes = [
     path: '',
     component: AppComponent,
     children: [
+      { path: '', redirectTo: '/login', pathMatch: 'full' },
       { path: 'login', component: LoginPageComponent },
       { path: 'main', component: MainPageComponent },
     ],

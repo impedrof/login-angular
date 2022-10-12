@@ -101,6 +101,13 @@
     background-color: #F6F6F6;
     color: var(--btn-primary);
     cursor: pointer;
+    transition: 200ms;
+}
+
+.actions__btn:disabled {
+    background-color: #F6F6F6;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: default;
 }
 
 .actions__btn--orange {

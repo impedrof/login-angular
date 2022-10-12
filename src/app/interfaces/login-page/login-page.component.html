@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="form-login">
+    <form class="form-login" [formGroup]="loginForm">
       <div class="form-login__formfield">
         <label for="email" class="form-login__label"
           >Enter your username or email address</label
@@ -22,6 +22,7 @@
           type="text"
           class="form-login__input"
           placeholder="Username or email address"
+          formControlName="email"
         />
       </div>
 
@@ -34,13 +35,20 @@
           type="password"
           class="form-login__input"
           placeholder="Password"
+          formControlName="password"
         />
         <a class="form-login__forgot-password" href="">Forgot Password</a>
       </div>
-    </div>
+    </form>
 
     <div class="actions">
-      <button class="actions__btn actions__btn--orange">Sign in</button>
+      <button
+        class="actions__btn actions__btn--orange"
+        (click)="signIn()"
+        [disabled]="loginForm.invalid"
+      >
+        Sign in
+      </button>
       <p class="actions__or textMD">Or</p>
       <div class="actions__other-options">
         <button class="actions__btn actions__btn--light-orange">
