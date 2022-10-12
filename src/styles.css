@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap');
+
+
+html, body {
+    font-family: 'Baloo 2', cursive;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+a, a:active, a:disabled, a:hover {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+:root {
+    --primary: #ECBC76;
+    --canvas: #FFFEF9;
+    --bg: #FFFFFF;
+    --light: #8D8D8D;
+    --input-outline: #4285F4;
+    --input-placeholder: #b9b9b9;
+    --btn-primary: #E48700;
+    --btn-light: #FFF4E3;
+}
+
+.textSM {
+    font-size: 14px;
+}
+
+.textMD {
+    font-size: 16px;
+}
+
+.textMDX {
+    font-size: 20px;
+}
+
+.textLG {
+    font-size: 24px;
+}
+
+.textLGX {
+    font-size: 30px;
+}
+
+.textLGXX {
+    font-size: 36px;
+}
+
+.textX {
+    font-size: 40px;
+}
+
+.textXX {
+    font-size: 55px;
+}

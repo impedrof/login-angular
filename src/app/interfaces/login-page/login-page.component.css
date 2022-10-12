@@ -1,0 +1,139 @@
+/* BACKGROUND */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.background::after, .background::before {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+}
+
+.background::after {
+    left: 0;
+    background-color: var(--primary);
+}
+
+.background::before {
+    right: 0;
+    background-color: var(--canvas);
+}
+
+
+/* CARD LOGIN */
+.card {
+    min-width: 450px;
+    padding: 60px;
+    background: var(--bg);
+    border-radius: 40px;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, .08);
+}
+
+.section-header-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.caption {
+    color: var(--light);
+}
+
+/*  FORM LOGIN */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.form-login__formfield {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-login__label {
+    font-weight: 500;
+}
+
+.form-login__input {
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-login__input:focus {
+    border: 1px solid var(--input-outline);
+}
+
+.form-login__input::placeholder {
+    color: var(--input-placeholder);
+    font-weight: 300;
+}
+
+.form-login__forgot-password {
+    margin-left: auto;
+}
+
+/* BUTTONS */
+.actions__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    appearance: none;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #F6F6F6;
+    color: var(--btn-primary);
+    cursor: pointer;
+}
+
+.actions__btn--orange {
+    background-color: var(--btn-primary);
+    color: #ffffff;
+}
+
+.actions__btn--light-orange {
+    background-color: var(--btn-light);
+    color: var(--btn-primary);
+}
+
+.actions__or {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--light);
+    margin: 16px 0;
+}
+
+.actions__logo {
+    width: 24px;
+    height: 24px;
+}
+
+.actions__other-options {
+    display: flex;
+    gap: 20px;
+}
+
+.actions__other-options .actions__btn:nth-child(1) {
+    width: 100%;
+}
+
+.actions__other-options .actions__btn {
+    width: 80px;
+}
